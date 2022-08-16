@@ -1,0 +1,34 @@
+<h2>Students</h2>
+
+
+<div *ngFor="let student of students">
+
+  <h3>
+    <a 
+    [title]="student.name + '   ' + student.form"
+    [routerLink]="['/students', student.id]">
+      {{ student.name }}
+    </a>
+  </h3>
+
+  <p *ngIf="student.paymentCategory">
+    Payment category: {{ student.paymentCategory }}  <br>
+    If last home task done: {{student.isLastTicketDone}}
+  </p>
+
+  <button type="button" (click)="informStudent()">
+    Inform
+  </button>
+
+  <app-student-alerts 
+    [student]="student"
+    (notify) = "onNotify()">
+</app-student-alerts>
+
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->

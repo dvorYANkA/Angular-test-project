@@ -1,0 +1,9 @@
+<h2>Student Details</h2>
+
+<div *ngIf="student">
+  <h3>{{ student.name }}</h3>
+  <h4>Price for this student  {{ student.price | currency }}</h4>
+  <p>{{ student.paymentCategory }} payment category</p>
+  <p>{{student.form}} form</p>
+  <p>Is last ticket done: {{student.isLastTicketDone}}</p>
+</div>

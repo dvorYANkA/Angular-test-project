@@ -1,0 +1,18 @@
+[
+  {
+    "type": "Standard",
+    "price": 200
+  },
+  {
+    "type": "Volunteer",
+    "price": 0
+  },
+  {
+    "type": "Special rulles",
+    "price": 0
+  },
+  {
+    "type": "Special promotion",
+    "price": 100
+  }
+]

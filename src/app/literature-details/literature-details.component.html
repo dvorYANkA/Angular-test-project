@@ -1,0 +1,9 @@
+<h2>Literature Details</h2>
+
+<div *ngIf="literature">
+  <h3>{{ literature.subject }}</h3>
+  <p>Author: {{ literature.author }}</p>
+  <p>Form: {{literature.form}}</p>
+  <p>Deep learning: {{literature.isDeepStuding}}</p>
+  <p>Link: {{literature.linkToSource}}</p>
+</div>

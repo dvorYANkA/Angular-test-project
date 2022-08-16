@@ -1,0 +1,10 @@
+<h2>Literature</h2>
+<div *ngFor="let literatures of literature">
+    <h3>
+        <a 
+        [title]="literatures.linkToSource"
+        [routerLink]="['/literature', literatures.id]">>
+          {{ literatures.subject }} {{literatures.form}} {{literatures.author}}
+        </a>
+      </h3>
+</div>
